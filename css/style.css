@@ -1,15 +1,19 @@
 body {
-  background-color: lightgrey;
+  background-image: url("../img/empty_grid.png");
 }
 
 button#add-task {
   width: 100%;
 }
 
-button#start, button#pause {
+button#start, button#stop, button#pause {
   display: block;
   min-width: 50%;
   margin: 1em auto;
+}
+
+button#start.hidden , button#stop.hidden , button#pause.hidden {
+  display: none;
 }
 
 .content-div {
@@ -23,4 +27,34 @@ h1, h2 {
 }
  ul {
    list-style: none;
+ }
+ body main div.container div.row.no-gutters button, body main div.container div.row.no-gutters input {
+   border-radius: 0px;
+ }
+
+ section.timer-section {
+   width: 75%;
+   margin: 1em auto;
+   text-align: center;
+   font-size: 2em;
+ }
+
+ section.timer-section.started {
+   color: blue;
+ }
+
+ section.timer-section.paused {
+   color: red;
+ }
+
+ ul {
+   padding: 0;
+ }
+
+ li {
+   display: flex;
+   justify-content: space-between;
+   padding: 0.5em 1em;
+   background-color: lightgrey;
+   border: 1px solid grey;
  }

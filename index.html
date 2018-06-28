@@ -9,44 +9,50 @@
 
     <title>Template</title>
   </head>
+  <body>
     <main>
       <div class="container">
         <div class="row no-gutters">
           <div class="col-sm-12">
             <h1>Kandan Pomodoro</h1>
           </div>
-          <div class="col-sm-8 bg-light border border-primary rounded">
-            <input type="text" class="form-control" id="add-input" placeholder="Nouvelle tâche">
+          <div class="col-sm-8 bg-light border border-dark">
+            <input type="text" class="form-control" id="add-input" placeholder="Nouvelle tâche" value="tâche">
           </div>
-          <div class="col-sm-4 bg-light border border-primary rounded">
-            <button type="submit" class="btn btn-primary" id="add-task">Ajouter</button>
+          <div class="col-sm-4 bg-light border border-dark">
+            <button type="submit" class="btn btn-secondary" id="add-task">Ajouter</button>
           </div>
           <div class="col-sm-4">
-            <div class="title-div bg-light border border-primary rounded">
+            <div class="title-div bg-light border border-dark">
               <h2>A faire</h2>
             </div>
-            <div class="content-div bg-light border border-primary rounded todo-list-div">
-              <ul class="">
+            <div class="content-div bg-light border border-dark todo-list-div">
+              <ul id="todo-list-ul">
               </ul>
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="title-div bg-light border border-primary rounded">
+            <div class="title-div bg-light border border-dark">
               <h2>En cours</h2>
             </div>
-            <div class="content-div bg-light border border-primary rounded in-progress-div">
-              <button type="submit" class="btn btn-primary" id="start">Début</button>
-              <button type="submit" class="btn btn-primary" id="pause">Pause</button>
+            <div class="content-div bg-light border border-dark in-progress-div">
+              <section class="timer-section border border-dark rounded paused" id="timer-section">
+                00:00
+              </section>
+              <button type="submit" class="btn btn-secondary" id="start">Début</button>
+              <button type="submit" class="btn btn-secondary hidden" id="stop">Fin</button>
+              <button type="submit" class="btn btn-secondary hidden" id="pause">Pause</button>
+              <ul id="current-task-ul">
+              </ul>
             </div>
 
           </div>
           <div class="col-sm-4">
-            <div class="title-div bg-light border border-primary rounded">
+            <div class="title-div bg-light border border-dark">
               <h2>Fait</h2>
             </div>
-            <div class="content-div bg-light border border-primary rounded done-list-div">
-              <ul class="">
-                <li>Sample</li>
+            <div class="content-div bg-light border border-dark done-list-div">
+              <ul id="done-task-ul">
               </ul>
             </div>
           </div>
@@ -55,7 +61,8 @@
     </main>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <!-- <script src="node_modules/popper.js/dist/popper.min.js"></script> -->
+    <script src="node_modules/sortablejs/Sortable.min.js"></script>
+    <script src="node_modules/timer.js/dist/timer.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
