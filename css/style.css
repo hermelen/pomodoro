@@ -1,3 +1,26 @@
 body {
   background-color: lightgrey;
 }
+
+button#add-task {
+  width: 100%;
+}
+
+button#start, button#pause {
+  display: block;
+  min-width: 50%;
+  margin: 1em auto;
+}
+
+.content-div {
+  min-height: 500px;
+}
+
+h1, h2 {
+  width: 100%;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+ ul {
+   list-style: none;
+ }

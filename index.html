@@ -3,64 +3,61 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <title>Template</title>
   </head>
     <main>
-      <ul>
-        <li>
-          <a target="_blank" href="http://codi3-1.local:8000/">Aurélie</a>
-        </li>
-        <li>
-          <a target="_blank" href="http://codi3-2.local:8000/">Mika</a>
-        </li>
-        <li>
-          <a target="_blank" href="http://codi3-3.local:8000/">Alexia</a>
-        </li>
-        <li>
-          <a target="_blank" href="http://codi3-4.local:8000/">Dimitri</a>
-        </li>
-        <li>
-          <a target="_blank" href="http://codi3-5.local:8000/">J-B</a>
-        </li>
-        <li>
-          <a target="_blank" href="http://codi3-6.local:8000/">Dorian</a>
-        </li>
-        <li>
-          <a target="_blank" href="http://codi3-7.local:8000/">Perrine</a>
-        </li>
-        <li>
-          <a target="_blank" href="http://codi3-8.local:8000/">Thomas</a>
-        </li>
-        <li>
-          <a target="_blank" href="http://codi3-9.local:8000/">Quentin</a>
-        </li>
-        <li>
-          <a target="_blank" href="http://codi3-10.local:8000/">J-D</a>
-        </li>
-        <li>
-          <a target="_blank" href="http://codi3-11.local:8000/">Caroline</a>
-        </li>
-        <li>
-          <a target="_blank" href="http://codi3-12.local:8000/">Fabien</a>
-        </li>
-        <li>
-          <a target="_blank" href="http://codi3-13.local:8000/">Yann</a>
-        </li>
-        <li>
-          <a target="_blank" href="http://codi3-14.local:8000/">Thibaud</a>
-        </li>
-        <li>
-          <a target="_blank" href="http://codi3-15.local:8000/">Hermelen</a>
-        </li>
-      </ul>
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-sm-12">
+            <h1>Kandan Pomodoro</h1>
+          </div>
+          <div class="col-sm-8 bg-light border border-primary rounded">
+            <input type="text" class="form-control" id="add-input" placeholder="Nouvelle tâche">
+          </div>
+          <div class="col-sm-4 bg-light border border-primary rounded">
+            <button type="submit" class="btn btn-primary" id="add-task">Ajouter</button>
+          </div>
+          <div class="col-sm-4">
+            <div class="title-div bg-light border border-primary rounded">
+              <h2>A faire</h2>
+            </div>
+            <div class="content-div bg-light border border-primary rounded todo-list-div">
+              <ul class="">
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="title-div bg-light border border-primary rounded">
+              <h2>En cours</h2>
+            </div>
+            <div class="content-div bg-light border border-primary rounded in-progress-div">
+              <button type="submit" class="btn btn-primary" id="start">Début</button>
+              <button type="submit" class="btn btn-primary" id="pause">Pause</button>
+            </div>
+
+          </div>
+          <div class="col-sm-4">
+            <div class="title-div bg-light border border-primary rounded">
+              <h2>Fait</h2>
+            </div>
+            <div class="content-div bg-light border border-primary rounded done-list-div">
+              <ul class="">
+                <li>Sample</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="node_modules/popper.js/dist/popper.min.js"></script> -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
